@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="gradient-heading">Course Registration Form</h1>
+    <form action="">
+      <fieldset class="">
+        <legend>Personal Info</legend>
+        <table>
+          <tr>
+            <td><label for="">First Name:</label></td>
+            <td>
+              <input
+                type="text"
+                name="fname"
+                id=""
+                placeholder="Ex:Jai"
+                class="in"
+                required
+              />
+              <p>Enter Your Name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">SurName:</label></td>
+            <td><input type="text" name="" id="" class="in" optional /></td>
+          </tr>
+          <tr>
+            <td><label for="">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                name=""
+                id=""
+                class="in"
+                placeholder="jai@gmail.com"
+                required
+              />
+              <p>Enter valid email</p>
+              <br />
+              <img class="invalid" src="/remove (1).png" alt="invalid" />
+              <img class="valid" src="/correct.png" alt="valid" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile:</label></td>
+            <td><input type="tel" name="" id="" required class="in" /><p>Enter number</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td><label for="">Password:</label></td>
+            <td><input type="password" name="" id="" required class="in" /><p>Enter Password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="" >Confirm Password:</label></td>
+            <td><input type="password" name="" id="" optional class="re" /><p>Re-entr password</p></td>
+          </tr>
+          <tr>
+            <td><label for="">D.O.B:</label></td>
+            <td><input type="date" name="" id="" class="in" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Age:</label></td>
+            <td>
+              <input type="number" name="" id="" class="in" min="18" max="32" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Gender:</label></td>
+            <td>
+              <input type="radio" name="gen" id="" /><label for="">Male</label>
+              <input type="radio" name="gen" id="" /><label for=""
+                >Female</label
+              >
+              <input type="radio" name="gen" id="" /><label for=""
+                >Others</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Country:</label></td>
+            <td>
+              <select name="" id="">
+                Select Country
+                <option value="India">India</option>
+                <option value="U.S">U.S</option>
+                <option value="Japan">Japan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Upload File:</label></td>
+            <td><input type="file" name="" id="" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset class="fi">
+        <legend>Course Details</legend>
+        <label for="">Select Course:</label><br />
+        <select name="" id="">
+          <option value="Java">Java</option>
+          <option value="Python">Python</option>
+          <option value="C">C</option></select
+        ><br />
+        <label for="">Delivery Mode:</label>
+        <input type="radio" name="mo" id="" />Online
+        <input type="radio" name="mo" id="" />Offline<br />
+        <label for="">Choose Your Current Coding Knowledge</label><br />
+        <input type="range" name="" id="" min="1" max="5" /><br />
+        <label for="">Institute Name:</label>
+        <input type="text" value="Tap Academy" readonly name="" id="" /><br>
+        
+        <label for="">Feed Back</label><br />
+        <textarea name="" id="" rows="5" cols="30" resize="none"></textarea><br>
+        <input type="reset">
+        <input type="submit" name="" id="" /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
