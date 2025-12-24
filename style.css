@@ -1,0 +1,194 @@
+body {
+        background-color: black;
+        color: white;
+      }
+      .gradient-heading {
+        width: 500px;
+        margin: auto;
+        background: linear-gradient(270deg, #4facfe, #00f2fe, #a18cd1, #fbc2eb);
+        background-size: 600% 600%;
+        color: white;
+        padding: 16px 24px;
+        text-align: center;
+        border-radius: 10px;
+        animation: gradientMove 6s ease-in-out infinite;
+      }
+
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      legend {
+        border: 1px solid skyblue;
+        border-radius: 20px;
+        padding: 5px 10px;
+        background: linear-gradient(to right, #2c3e50, #3498db);
+      }
+      fieldset {
+        margin: 10px;
+        border-radius: 20px;
+        border-color: skyblue;
+        /* background: linear-gradient(to right, #232526, #414345); */
+        background: linear-gradient(to right, #3f51b5, #2196f3);
+      }
+      table {
+        padding: 20px;
+      }
+      form {
+        margin: 20px auto;
+        width: 600px;
+        padding: 30px;
+        border-radius: 20px;
+      }
+      .in,.re {
+        height: 20px;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      input[required] {
+        border: 2px solid red;
+      }
+      input[optional] {
+        border: 2px solid green;
+      }
+      td {
+        padding: 10px;
+      }
+      input:focus,
+      select:focus,
+      textarea:focus {
+        background-color: lightgrey;
+        box-shadow: 2px 2px 10px lightcoral;
+        transform: scale(1.05);
+        transition: all ease-in-out;
+      }
+      label {
+        font-weight: bolder;
+      }
+      input[name="fname"] + p {
+        display: none;
+        background-color: skyblue;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 5px;
+        width: 50px;
+        margin-left: 20px;
+      }
+      input[name="fname"]:focus + p {
+        display: inline;
+      }
+
+      input[type="radio"]:focus {
+        height: 15px;
+        width: 15px;
+        box-shadow: 1px 1px 8px rgb(3, 3, 232);
+      }
+      input[type="radio"]:checked + label {
+        font-size: 20px;
+        color: silver;
+      }
+      input[type="email"] ~ img {
+        height: 15px;
+        display: none;
+      }
+      input[type="email"]:focus:invalid ~ .invalid {
+        display: inline;
+      }
+      input[type="email"]:focus:valid ~ .valid {
+        display: inline;
+      }
+      input[type="email"] + p {
+        display: none;
+        background-color: skyblue;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 5px;
+        width: 50px;
+        margin-left: 20px;
+      }
+      input[type="email"]:focus + p {
+        display: inline;
+      }
+      input[type="tel"] + p {
+        display: none;
+        background-color: skyblue;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 5px;
+        width: 50px;
+        margin-left: 20px;
+      }
+      input[type="tel"]:focus + p {
+        display: inline;
+      }
+       input[type="password"] + p {
+        display: none;
+        background-color: skyblue;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 5px;
+        width: 50px;
+        margin-left: 20px;
+      }
+      input[type="password"]:focus + p {
+        display: inline;
+      }
+      img {
+        margin: 10px;
+      }
+       .re + p {
+        display: none;
+        background-color: skyblue;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 5px;
+        width: 50px;
+        margin-left: 20px;
+      }
+      .re:focus + p {
+        display: inline;
+      }
+      input[type="submit"]{
+        background-color: blue;
+        border-radius: 20px;
+        height:30px;
+        width:80px;
+        color:white;
+        font-weight: bold;
+      
+        
+      }
+      input[type="submit"]:hover{
+        background-color: skyblue;
+        color:black;
+        cursor: pointer;
+      }
+      input[type="reset"]{
+        background-color: blue;
+        border-radius: 20px;
+        height:30px;
+        width:80px;
+        color:white;
+        font-weight: bold;
+      }
+      input[type="reset"]:hover{
+        background-color: skyblue;
+        color:black;
+        cursor: pointer;
+      }
+      fieldset input[type="submit"] {
+      margin-left: 380px;
+      display: inline;
+      }
+      fieldset input[type="reset"] {
+      margin-right: auto;
+      display: inline;
+      }
